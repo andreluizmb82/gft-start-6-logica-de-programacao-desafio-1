@@ -1,4 +1,4 @@
-#gft-start-6-logica-de-programacao-desafio-1
+# gft-start-6-logica-de-programacao-desafio-1
 
 ## Introdução
 
@@ -45,7 +45,7 @@ Ao final deve se exibir uma mensagem:
 
 ## Solução Proposta
 
-Com o objetivo de desenvolver o desafio proposto, foram ciradas soluções em JavaScript, Python e TypeScript.
+Com o objetivo de desenvolver o desafio proposto, foram criadas soluções em JavaScript, Python e TypeScript.
 
 ### JavaScript
 

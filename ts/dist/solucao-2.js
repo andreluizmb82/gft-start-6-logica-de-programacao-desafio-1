@@ -1,7 +1,6 @@
 import input from "./input.js";
 async function solucao2() {
     const nomeHeroi = await input("Digite o nome do Herói: ");
-    //let xpHeroString
     let nivel = "";
     let xpHero = 0;
     do {
@@ -9,30 +8,30 @@ async function solucao2() {
         //xpHero = parseInt(xpHeroString, 10)
         xpHero = Number(xpHeroString);
     } while (isNaN(xpHero));
-    if (Number(xpHero) <= 1000) {
+    if (xpHero <= 1000) {
         nivel = "Ferro";
     }
-    else if (1001 <= xpHero && xpHero <= 2000) {
+    else if (xpHero <= 2000) {
         nivel = "Bronze";
     }
-    else if (2001 <= xpHero && xpHero <= 5000) {
+    else if (xpHero <= 5000) {
         nivel = "Prata";
     }
-    else if (5001 <= xpHero && xpHero <= 7000) {
+    else if (xpHero <= 7000) {
         nivel = "Ouro";
     }
-    else if (7001 <= xpHero && xpHero <= 8000) {
+    else if (xpHero <= 8000) {
         nivel = "Platina";
     }
-    else if (8001 <= xpHero && xpHero <= 9000) {
+    else if (xpHero <= 9000) {
         nivel = "Ascendente";
     }
-    else if (9001 <= xpHero && xpHero <= 10000) {
+    else if (xpHero <= 10000) {
         nivel = "Ascendente";
     }
-    else if (xpHero >= 10001) {
+    else {
         nivel = "Radiante";
     }
-    console.log(`\nO Herói de nome ** ${nomeHeroi} ** está no nível de ** ${nivel}** com ${xpHero}"xp\n`);
+    console.log(`O Herói de nome ${nomeHeroi} está no nível de ${nivel}`);
 }
 export default solucao2;
