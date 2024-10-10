@@ -1,8 +1,7 @@
 nivel = ""
 nome = input("Digite o nome do herói: ")
 xp = int(input("Digite o número de experiência do herói: "))
-NOME = "O Herói de nome **"
-NIVEL = "** está no nível de **"
+
 
 
 

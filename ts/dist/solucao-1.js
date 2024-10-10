@@ -21,7 +21,7 @@ const solucao1 = () => {
             nivel = "Ascendente";
         }
         else if (xp <= 10000) {
-            nivel = "Ascendente";
+            nivel = "Imortal";
         }
         else {
             nivel = "Radiante";

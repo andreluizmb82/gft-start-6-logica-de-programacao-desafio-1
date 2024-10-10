@@ -1,4 +1,4 @@
-import input from "./input.js"
+import input from "./meus-modulos/input.js"
 async function solucao2() {
   const nomeHeroi = await input("Digite o nome do Herói: ")
   let nivel = ""
@@ -22,11 +22,10 @@ async function solucao2() {
   } else if (xpHero <= 9000) {
     nivel = "Ascendente"
   } else if (xpHero <= 10000) {
-    nivel = "Ascendente"
+    nivel = "Imortal"
   } else {
     nivel = "Radiante"
   }
   console.log(`O Herói de nome ${nomeHeroi} está no nível de ${nivel}`)
 }
-
 export default solucao2

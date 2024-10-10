@@ -1,13 +1,5 @@
-import input from "./meus-modulos/input.js";
-async function solucao2() {
-    const nomeHeroi = await input("Digite o nome do Herói: ");
+export default function retornarNivel(xpHero) {
     let nivel = "";
-    let xpHero = 0;
-    do {
-        let xpHeroString = await input("Digite o XP do Herói: ");
-        //xpHero = parseInt(xpHeroString, 10)
-        xpHero = Number(xpHeroString);
-    } while (isNaN(xpHero));
     if (xpHero <= 1000) {
         nivel = "Ferro";
     }
@@ -32,6 +24,5 @@ async function solucao2() {
     else {
         nivel = "Radiante";
     }
-    console.log(`O Herói de nome ${nomeHeroi} está no nível de ${nivel}`);
+    return nivel;
 }
-export default solucao2;

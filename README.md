@@ -45,28 +45,80 @@ Ao final deve se exibir uma mensagem:
 
 ## Solução Proposta
 
-Com o objetivo de desenvolver o desafio proposto, foram criadas soluções em JavaScript, Python e TypeScript.
+Com o objetivo de desenvolver a solução proposta, foi utilizado o Visual Studio Code como IDE para desenvolver o código. As soluções propostas foram desenvolvidas em JavaScript, Python e TypeScript. Em cada linguagem, foram desenvolvidas três soluções diferentes.
+
+Este bootcamp me serviu como uma forma de rever os conceitos básicos de programação, então, não foi utilizado nenhum framework ou biblioteca para auxiliar no desenvolvimento. E a interação de desenvolver três soluções diferentes para o mesmo desafio foi uma forma de aprofundar mais na revisão desse conceito.
+
+Por isso, busquei mater a solução-1 em cada linguagem, de forma simples e objetiva. Já a solução-2 e solução-3 foram desenvolvidas de forma a explorar conceitos mais avançados.
 
 ### JavaScript
 
-Para a solução em JavaScript, foi utilizado o Node.js v20.17.0 para rodar o código. Para executar o código da primeira solução proposta, basta abrir o terminal no diretório `js` e digitar o comando:
+Para a solução em JavaScript, foi utilizado o Node.js v20.17.0 para rodar o código. Para executar o código, basta abrir o terminal no diretório `./js/src` e digitar os comandos:
 
 ```bash
-node desafio1.js
+node solucao-1.js
+node solucao-2.mjs
+```
+
+- _A solução-3.mjs foi desenvolvida para ser executado o teste unitário._
+  Para executar o teste unitário para a solução 3, basta abrir o terminal no diretório `./js/test` e digitar o comando:
+
+```bash
+mode test-solucao-3.mjs
 ```
 
 ### Python
 
-Para a solução em Python, foi utilizado o Python 3.12.6. Para executar o código da primeira solução proposta, basta abrir o terminal no diretório `python` e digitar o comando:
+Para a solução em Python, foi utilizado o Python 3.12.6. Para executar o código de cada solução, basta abrir o terminal no diretório `./python/src` e digitar o comando:
+
+No windows:
 
 ```bash
-python desafio1.py
+python solucao-1.py
+python solucao-2.py
+python solucao-3.py
+```
+
+No linux:
+
+```bash
+python3 desafio-1.py
+python3 desafio-2.py
+python3 desafio-3.py
+```
+
+Para executar o teste unitário para a solução 3, basta abrir o terminal no diretório `./python/test` e digitar o comando:
+
+No windows:
+
+```bash
+python test_solucao_3.py
+```
+
+No linux:
+
+```bash
+python3 test_desafio_3.py
 ```
 
 ### TypeScript
 
-Para a solução em TypeScript, foi utilizado o Node.js v20.17.0 para rodar o código. Para executar o código da solução proposta, basta abrir o terminal no diretório `./ts/dist` e digitar o comando:
+Para a solução em TypeScript, foi utilizado o Node.js v20.17.0 para rodar o código. Para executar o código da solução 1 ou da solução 2, basta abrir o terminal no diretório `./ts/dist` e digitar o comando:
 
 ```bash
 node index.js
+```
+
+E digitar 1 ou 2 para escolher a solução e pressionar enter.
+
+Para executar o teste unitário para a solução 3, basta abrir o terminal no diretório `./ts/test` e digitar o comando:
+
+```bash
+node test-solucao-3.js
+```
+
+Para executar o teste unitário para a solução 3, basta abrir o terminal no diretório `./ts/dist/test` e digitar o comando:
+
+```bash
+node test-solucao-3.js
 ```

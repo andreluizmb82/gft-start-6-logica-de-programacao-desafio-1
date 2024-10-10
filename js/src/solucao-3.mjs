@@ -17,12 +17,20 @@ const pergunta = (textoPergunta) => {
   })
 }
 
-async function getUserInputs() {
-  const nomeHeroi = await pergunta("Digite o nome do Herói: ")
-  const xpHero = await pergunta("Digite o XP do Herói: ")
-  const nivel = core(parseInt(xpHero, 10))
+export default async function solucao3(nomeHeroi = "", xpHero = "") {
+  if (nomeHeroi === "") {
+    nomeHeroi = await pergunta("Digite o nome do Herói: ")
+  }
 
-  console.log(`O Herói de nome ${nomeHeroi} está no nível de ${nivel}`)
+  if (xpHero === "") {
+    xpHero = await pergunta("Digite o XP do Herói: ")
+  }
+
+  const nivel = await core(parseInt(xpHero, 10))
+
+  function msgF() {
+    return `O Herói de nome ${nomeHeroi} está no nível de ${nivel}`
+  }
+  const msg = await msgF()
+  return msg
 }
-
-getUserInputs()

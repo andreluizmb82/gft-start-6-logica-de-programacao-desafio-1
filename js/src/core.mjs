@@ -13,7 +13,7 @@ export default function core(xp) {
   } else if (xp <= 9000) {
     nivel = "Ascendente"
   } else if (xp <= 10000) {
-    nivel = "Ascendente"
+    nivel = "Imortal"
   } else if (xp >= 10001) {
     nivel = "Radiante"
   }
